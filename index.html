@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Finder</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Dog Finder</h1>
+    <p>Search for a breed and see a random picture of that dog!</p>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <label for="breed-search">Search by breed:</label>
+      <input type="text" id="breed-search" placeholder="Type a breed...">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div class="results">
+      <div id="dog-info">
+        <h2 id="breed-name">Breed Name</h2>
+        <img id="dog-image" src="" alt="Dog image" class="hidden">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  </footer>
+  <script src="index.js"></script>
 </body>
 </html>
